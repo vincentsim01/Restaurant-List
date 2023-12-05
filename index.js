@@ -128,12 +128,27 @@ orderData = {
 
 
 
-    for (let step = 0; step < Object.keys(orderData).length; step++) {
+//     for (let step = 0; step < Object.keys(orderData).length; step++) {
 
-        console.log("Id:"+parseInt(step+1),'\n'+
-        "Order:"+Object.keys(orderData)[step],'\n'+
-        "Percentage:"+Object.values(orderData)[step]/parseInt(sum)*100, '\n'+
-        "Restaurant:Punjabi");
+//         console.log("Id:"+parseInt(step+1),'\n'+
+//         "Order:"+Object.keys(orderData)[step],'\n'+
+//         "Percentage:"+Object.values(orderData)[step]/parseInt(sum)*100, '\n'+
+//         "Restaurant:Punjabi");
+
+// }
+
+for (let step = 0; step < Object.keys(orderData).length; step++) {
+
+    var Taksin=[
+        {
+        id : parseInt(step+1),
+        order : Object.keys(orderData)[step],
+        Percentage : (Object.values(orderData)[step]/parseInt(sum)).toFixed(5)*100+"%",
+        Restaurant : "Punjabi"
+        }
+    ]
+
+    console.log(Taksin);
 
 }
 
