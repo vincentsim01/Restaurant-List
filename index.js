@@ -121,3 +121,83 @@ orderData = {
 
 
 
+    // c. Calculate the percentage of each proportion in below format:
+
+
+
+    // const keyPercentage = Object.values(orderData).forEach(val => console.log(
+        
+        
+    //     "Order:",'\n'+
+    //     "Percentage:"+val/parseInt(sum)*100, '\n'
+    //     +"Restaurant:Punjabi"
+        
+        
+        
+        
+        
+    //     ));
+
+
+
+    
+    
+    
+    
+    for (const [key, value] of Object.entries(orderData)) {
+
+        var count=0;
+
+        for (let step = 0; step < Object.keys(orderData).length+1; step++) {
+            // Runs 5 times, with values of step 0 through 4.
+
+    
+
+
+        console.log("ID:"+step,'\n'+
+                    "Order:"+key,'\n'+
+                    "Percentage:"+value/parseInt(sum)*100, '\n'+
+                    "Restaurant:Punjabi");
+
+        }
+        // console.log(`id:1 <br> order:${key} <br> Percentage: ${value}/${sum}*100 <br> Restaurant: Punjabi Taka`);
+      }
+
+
+
+//     var theOrder=[{
+//         id: 1,
+//         order: "Below 500",
+//         percentage: "10.05",
+//         restaurant: "Punjabi Tadka"
+//        },
+//        {
+//         id: 2,
+//         order: "500-1000",
+//         percentage: "14.57",
+//         restaurant: "Punjabi Tadka"
+//        },
+//        {
+//         id: 3,
+//         order: "1000-1500",
+//         percentage: "15.08",
+//         restaurant: "Punjabi Tadka"
+//        },
+//        {
+//         id: 4,
+//         order: "1500-2000",
+//         percentage: "22.11",
+//         restaurant: "Punjabi Tadka"
+//        },
+//        {
+//         id: 5,
+//         order: "Above 2000",
+//         percentage: "38.19",
+//         restaurant: "Punjabi Tadka"
+//        }] 
+
+
+
+
+// console.log(theOrder);
+
