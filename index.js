@@ -40,8 +40,7 @@ var restaurantList = [
     }
 ];
 
-
-// body.onload=printAllRestaurantNames;
+//PRINT ALL RESTAURANT NAMES//
 
 
 function printAllRestaurantNames(){
@@ -58,6 +57,10 @@ function printAllRestaurantNames(){
 // printAllRestaurantNames();
 
 
+
+//FILTER RESTAURANTS BY CITY//
+
+
 function filterRestaurantByCity(clausa){
     var filteredRestaurants=restaurantList.filter((ristorante)=>{
         return ristorante.city.includes(clausa);
@@ -68,18 +71,53 @@ function filterRestaurantByCity(clausa){
      
 };
 
-var filtertheRestaurant=filterRestaurantByCity("C");
-
-console.log(filtertheRestaurant);
-
-
-// var bena=restaurantList.filter((ristorante)=>{return ristorante.city=="A";});
-
-
 // var benzi=restaurantList.filter((ristorante)=>{return ristorante.price<3000;});
 
-// console.log(bankai);
 
-// console.log(benzi);
+var filtertheRestaurant=filterRestaurantByCity("B");
 
-// console.log(bena);
+// console.log(filtertheRestaurant);
+
+
+
+
+
+
+
+
+
+
+orderData = {
+    'Below 500': 20,
+    '500-1000': 29,
+    '1000-1500': 30,
+    '1500-2000': 44,
+    'Above 2000': 76
+
+    }; 
+
+
+
+    // a. Calculate the total number of orders placed for the restaurant?
+
+    const values = Object.values(orderData);
+
+    const sum = values.reduce((accumulator, value) => {
+      return accumulator + value;
+    }, 0);
+
+    console.log(sum);
+
+
+
+
+    // b. Calculate the number of order proportion options. 
+
+
+
+    const counting=Object.keys(orderData).length;
+
+    console.log(counting);
+
+
+
